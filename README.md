@@ -22,19 +22,18 @@ Ruby (v 2.6.6)
 chmod +x /local_directory/tweetstormgenerator.rb
 ```
 ### Usage
-Run the ruby script to break down a large tweet into smaller chunks of 140 characters
+Run the ruby script to break down a large tweet into smaller chunks of 140 characters.
 In your machine's shell, run the script by appending an input text to it.
 
+```
 Input:
-```
 /local_directory/tweetstormgenerator.rb  "The quick brown fox jumps over the lazy dog....The quick brown fox jumps over the lazy dog...The quick brown fox jumps over the lazy dog....The quick brown fox jumps over the lazy dog..."
-```
 
 Output:
-```
 1/2The quick brown fox jumps over the lazy dog....The quick brown fox jumps over the lazy dog...The quick brown fox jumps over the lazy dog.
 2/2...The quick brown fox jumps over the lazy dog...
 ```
+
 We can also output the tweetstorm into a file using standard shell output command:
 ```
 /local_directory/tweetstormgenerator.rb "This is a sample tweetstorm" > tweet_storm_output.txt
